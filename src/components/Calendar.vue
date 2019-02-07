@@ -58,7 +58,7 @@ export default {
           'is-vertical': this.isVertical,
           'is-expanded': this.isExpanded,
         },
-        style: this.wrapperStyle,
+        // style: this.wrapperStyle,
         ref: 'root',
       },
       [

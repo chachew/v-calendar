@@ -16,7 +16,7 @@
             name='leftArrow'
             :class='["c-arrow", { "c-disabled": !canMovePrevMonth }]'
             :style='arrowStyle'
-            @click='movePrevMonth'>
+            @click.stop='movePrevMonth'>
           </svg-icon>
         </slot>
       </div>
@@ -79,7 +79,7 @@
             name='rightArrow'
             :class='["c-arrow", { "c-disabled": !canMoveNextMonth }]'
             :style='arrowStyle'
-            @click='moveNextMonth'>
+            @click.stop='moveNextMonth'>
           </svg-icon>
         </slot>
       </div>
